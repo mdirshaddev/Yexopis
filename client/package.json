@@ -15,7 +15,8 @@
     "test:watch": "jest --watch",
     "jest:watchAll": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "netlify:build": "npm install -D && npm run webpack:build"
   },
   "jest": {
     "verbose": true,
