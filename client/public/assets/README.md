@@ -1,0 +1,1 @@
+# Assets link with index.html
