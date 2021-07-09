@@ -1,0 +1,3 @@
+# Yexopis
+
+**This is a Real time chat application with end 2 end encryption support. We have implemented 3 Tier Architecture. Client is hosted using Netlify, Server is hosted on Google Cloud Platform and the choice of database is PostgreSQL from AWS RDS. Using Github Actions CI/CD pipelines we are automating tests and building of this web application to ensure the correctness of this application.**
