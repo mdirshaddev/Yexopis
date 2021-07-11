@@ -1,0 +1,11 @@
+# My Own VScode configuration
+.vscode
+
+# Removing the project planning markdown file !! Will add at the end of project completion
+WORK.md
+
+# !! For temporary we are not shipping the github actions files
+.github
+
+# !! For temporary we are not shipping the draw.io file containing the mockups
+*.drawio
