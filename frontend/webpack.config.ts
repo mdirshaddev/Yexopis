@@ -86,7 +86,22 @@ function webpackConfig(options: { env:string }):extendConfiguration{
         {
           enforce: 'pre',
           test: /\.js$/,
+          exclude: /node_modules/,
           loader: 'source-map-loader'
+        },
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+                modules: true
+              }
+            }
+          ],
+          include: /\.module\.css$/
         },
         // css support
         {
@@ -94,7 +109,8 @@ function webpackConfig(options: { env:string }):extendConfiguration{
           use: [
             MiniCSSExtractPlugin.loader, // extracting to a file with .css
             "css-loader" // loading css files to browser dom
-          ]
+          ],
+          exclude: /\.module\.css$/
         },
         // images, icons, svgs, gifs support
         {
