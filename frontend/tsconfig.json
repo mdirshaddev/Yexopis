@@ -30,6 +30,6 @@
     "./src",
     "./webpack.config.ts",
     "./src/service/tsconfig.json",
-    "./__tests__/**/*.spec.tsx"
+    "./src/__tests__/tsconfig.json"
   ]
 }
